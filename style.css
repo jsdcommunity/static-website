@@ -72,6 +72,20 @@ h1,h2,h3,h4{
 .social-link:hover{
 	transform: scale(1.2);
 }
+.nav-item::before {
+	width: 3.1rem;
+	height: 2px;
+	background-color: #000;
+	content: "";
+	position: absolute;
+	bottom: 30%;
+	transform: scale(0);
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	transform-origin: left;
+}
+.nav-item:hover::before{
+	transform: scale(1);
+}
 .social-icon {
 	position: absolute;
 	top: 50%;
