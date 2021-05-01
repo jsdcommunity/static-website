@@ -28,4 +28,4 @@ $(window).on("scroll", function() {
     }
 });
 
-ScrollReveal({ reset: true }).reveal('.timeline-item').delay(1000);
+ScrollReveal({ reset: true }).reveal('.timeline-item').delay(500);
