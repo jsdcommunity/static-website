@@ -32,7 +32,7 @@ const
         entry:{},
         output:{
             filename: 'js/[name].[chunkhash].js',
-            path: resolve('dist'),
+            path: resolve('/'),
             publicPath: '/'
         },
         resolve:{
