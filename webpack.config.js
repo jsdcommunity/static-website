@@ -33,7 +33,7 @@ const
         output:{
             filename: 'js/[name].[chunkhash].js',
             path: resolve('dist'),
-            publicPath: '/dist'
+            publicPath: '/'
         },
         resolve:{
             alias:{
