@@ -33,7 +33,7 @@ const
         output:{
             filename: 'js/[name].[chunkhash].js',
             path: resolve('dist/'),
-            publicPath: '/static-website/' //update this to / after domain added
+            publicPath: isProd ? '/static-website/' : '/' //update this to / after domain added
         },
         resolve:{
             alias:{
