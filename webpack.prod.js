@@ -27,7 +27,7 @@ const config = {
         }),
         new HtmlWebpackInjector(),
         new MiniCssExtractPlugin({
-            filename:'css/[name].[hash].css',
+            filename:'css/[name].[fullhash].css',
         }),
         new CleanWebpackPlugin()
     ],
@@ -86,7 +86,7 @@ const config = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[hash].[ext]'
+                    filename: 'images/[contenthash].[ext]'
                 }
             },
             {
