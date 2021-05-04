@@ -1,38 +1,35 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackInjector = require('html-webpack-injector')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const Handlebars = require('handlebars')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInjector = require('html-webpack-injector');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Handlebars = require('handlebars');
+const fs = require('fs');
 
-const fs = require('fs')
 const header = fs.readFileSync(__dirname + '/src/layout/header.html')
 const footer = fs.readFileSync(__dirname + '/src/layout/footer.html')
 
-const resolve = p => path.resolve(__dirname, p)
+const resolve = p => path.resolve(__dirname, p);
 
 const config = {
-    mode: 'development',
-    devtool: 'inline-source-map',
-    devServer: {
-        port: process.env.PORT || 3000,
-        contentBase: path.join(__dirname, './dist'),
-        watchContentBase: true,
-        overlay: true,
-        open: true,
-        hot: true,
-        publicPath: '/'
-    },
+    mode: 'production',
     plugins: [
         new HtmlWebpackPlugin({
             inject: true,
-            // minify: null,
+            minify: {
+                removeAttributeQuotes: false,
+                collapseWhitespace: false,
+                removeComments: false
+            },
             template: './src/index.html',
             filename: 'index.html',
-            chunks: 'index',
-            // favicon: 
+            chunks: ['index'],
         }),
-        new HtmlWebpackInjector()
+        new HtmlWebpackInjector(),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[fullhash].css',
+        }),
+        new CleanWebpackPlugin()
     ],
     entry: {
         index: './src/js/scripts.js',
@@ -40,11 +37,11 @@ const config = {
     output: {
         filename: 'js/[name].[chunkhash].js',
         path: resolve('dist/'),
-        publicPath: '/'
+        publicPath: '/static-website/'
     },
     resolve: {
         alias: {
-            "@": resolve('src')
+            "@": resolve("src")
         }
     },
     module: {
@@ -95,13 +92,16 @@ const config = {
             {
                 test: /\.styl$/,
                 use: [
-                    'style-loader',
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
                     "css-loader",
                     "stylus-loader"
                 ]
             }
+
         ]
     }
 }
 
-module.exports = config
+module.exports = config;
