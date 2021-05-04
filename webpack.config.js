@@ -17,6 +17,7 @@ const config = {
     devServer: {
         port: process.env.PORT || 3000,
         contentBase: path.join(__dirname, './dist'),
+        watchContentBase: true,
         overlay: true,
         open: true,
         hot: true,
