@@ -4,10 +4,7 @@
   "description": "Website of JSD community",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --open ",
-    "production": "cross-env NODE_ENV=production webpack",
-    "prod": "npm run production",
-    "test": "cypress open",
-    "test:init": "npm install cypress --no-save"
+    "production": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
