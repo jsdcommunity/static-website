@@ -27,7 +27,7 @@ const config = {
         }),
         new HtmlWebpackInjector(),
         new MiniCssExtractPlugin({
-            filename:'css/[name].[fullhash].css',
+            filename: 'css/[name].[fullhash].css',
         }),
         new CleanWebpackPlugin()
     ],
@@ -64,18 +64,18 @@ const config = {
                         options: {
                             preprocessor: (content, loaderContext) => {
                                 let result;
-                    
+
                                 try {
-                                  result = Handlebars.compile(content)({
-                                    header,
-                                    footer
-                                  });
+                                    result = Handlebars.compile(content)({
+                                        header,
+                                        footer
+                                    });
                                 } catch (error) {
-                                  loaderContext.emitError(error);
-                    
-                                  return content;
+                                    loaderContext.emitError(error);
+
+                                    return content;
                                 }
-                    
+
                                 return result;
                             }
                         }
