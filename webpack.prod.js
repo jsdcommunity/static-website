@@ -96,6 +96,9 @@ const config = {
                         loader: MiniCssExtractPlugin.loader
                     },
                     "css-loader",
+                    {
+                        loader: "postcss-loader"
+                    },
                     "stylus-loader"
                 ]
             }
