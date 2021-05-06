@@ -36,5 +36,10 @@
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "jquery": "^3.6.0",
+    "scrollreveal": "^4.0.9"
   }
 }
