@@ -1,0 +1,132 @@
+.contact-container {
+	width: 100%;
+	background-color: var(--darkViolet);
+	color: #fff;
+	display: flex;
+	padding: 3rem;
+}
+.made-easy {
+	width: 50%;
+	padding: 7rem 10rem;
+}
+.contact-container form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 7rem 10rem;
+}
+.contact-container form > input, .contact-container form textarea {
+	border: none;
+	background: none;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 2rem;
+	padding: 0.5rem 1rem;
+	resize: none;
+	font-family: var(--poppins);
+	color: #fff;
+	outline: none;
+}
+.made-easy p {
+	font-family: var(--poppins);
+	letter-spacing: 1.1px;
+	line-height: 1.5;
+	font-size: rem;
+	margin-top: 2rem;
+}
+.made-easy h2 {
+	font-size: 3rem;
+}
+.contact-container h1{
+	display: none;
+}
+form button {
+	border: none;
+	background-color: #fff;
+	width: 11rem;
+	height: 3rem;
+	border-radius: 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+form button:hover{
+	background-color: rgb(235, 229, 229);
+}
+@media only screen and (max-width: 1440px){
+	.made-easy {
+		padding: 7rem 6rem;
+	}
+	.contact-container form {
+		padding: 7rem;
+	}
+}
+@media only screen and (max-width:1200px){
+	.contact-container form {
+		padding: 4rem;
+	}
+	.made-easy {
+		padding: 4rem;
+	}
+	.made-easy h2 {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width:960px){
+	.contact-container form {
+		padding: 2rem;
+	}
+	.made-easy {
+		padding: 2rem;
+	}
+	.made-easy h2 {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width:740px){
+	.made-easy p {
+		margin-top: 1rem;
+		font-size: .9rem;
+	}
+	.contact-container {
+		padding: 1rem;
+	}
+	form button {
+		width: 8rem;
+		height: 3rem;
+		font-size: .9rem;
+	}
+	.contact-container form > input, .contact-container form textarea {
+		margin-bottom: 1.2rem;
+		padding: 0.5rem .5rem;
+	}
+}
+@media only screen and (max-width: 630px){
+	.contact-container h1{
+		display: block;
+	}
+	.made-easy{
+		display: none;
+	}
+	.contact-container {
+		padding: 1rem;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	.contact-container form {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 420px){
+	form button {
+		width: 7rem;
+		height: 2.5rem;
+		font-size: .9rem;
+		border-radius: 5px;
+	}
+	.contact-container form {
+		width: 90%;
+		padding: 0.2rem;
+	}
+}

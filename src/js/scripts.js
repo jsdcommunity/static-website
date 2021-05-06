@@ -1,5 +1,4 @@
 import '@/styl/style.styl'
-import '@/styl/timeline.styl'
 
 const navSlide = () =>{
     const nav = document.querySelector('#toggle')
