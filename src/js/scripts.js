@@ -1,5 +1,8 @@
 import '@/styl/style.styl'
 
+const $ = require("jquery");
+import ScrollReveal from "scrollreveal"
+
 const navSlide = () =>{
     const nav = document.querySelector('#toggle')
     const navResponse = document.querySelector('.nav-responsive')
@@ -20,7 +23,6 @@ const navSlide = () =>{
 }
 navSlide();
 $(window).on("scroll", function() {
-    console.log('scroll');
     if($(window).scrollTop() > 80) {
         $(".container-header").addClass("header-active");
         $(".social-link").addClass("social-link-active")
