@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const header = fs.readFileSync(__dirname + '/../src/layout/header.html')
 const footer = fs.readFileSync(__dirname + '/../src/layout/footer.html')
-const events = fs.readFileSync(__dirname + '/../src/components/events.html')
+const data = JSON.parse(fs.readFileSync(__dirname + '/data.json'));
 
 module.exports = {
     loader: 'html-loader',
@@ -13,9 +13,9 @@ module.exports = {
 
             try {
                 result = Handlebars.compile(content)({
+                    ...data,
                     header,
                     footer,
-                    events
                 });
             } catch (error) {
                 loaderContext.emitError(error);

@@ -28,7 +28,25 @@
     
     <!-- my section starts-->
 
-    {{{ events }}}
+    <div class="timeline-container">
+        <h1 class="events-title" id="upcoming-events">Upcoming Events</h1>
+        <div class="timeline">
+            <ul>
+                {{#each events_timeline}}
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h2 class="date">{{this.date}}</h2>
+                        <h1>{{this.heading}}</h1>
+                        <div class="timeline-image">
+                            <img src="{{this.image}}" alt="">
+                        </div>
+                        <p>{{this.content}}</p>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 
     <!-- my section ends-->
 
