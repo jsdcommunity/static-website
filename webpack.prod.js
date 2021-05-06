@@ -3,11 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInjector = require('html-webpack-injector');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const Handlebars = require('handlebars');
-const fs = require('fs');
-
-const header = fs.readFileSync(__dirname + '/src/layout/header.html')
-const footer = fs.readFileSync(__dirname + '/src/layout/footer.html')
+const HTMLTemplates = require('./config/html_templates');
 
 const resolve = p => path.resolve(__dirname, p);
 
@@ -58,29 +54,7 @@ const config = {
             },
             {
                 test: /\.(html)$/,
-                use: [
-                    {
-                        loader: 'html-loader',
-                        options: {
-                            preprocessor: (content, loaderContext) => {
-                                let result;
-
-                                try {
-                                    result = Handlebars.compile(content)({
-                                        header,
-                                        footer
-                                    });
-                                } catch (error) {
-                                    loaderContext.emitError(error);
-
-                                    return content;
-                                }
-
-                                return result;
-                            }
-                        }
-                    }
-                ]
+                use: [ HTMLTemplates ]
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,

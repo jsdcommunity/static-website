@@ -32,46 +32,18 @@
         <h1 class="events-title" id="upcoming-events">Upcoming Events</h1>
         <div class="timeline">
             <ul>
+                {{#each events_timeline}}
                 <li class="timeline-item">
                     <div class="timeline-content">
-                        <h2 class="date">20th May 2010</h2>
-                        <h1>Heading 1</h1>
+                        <h2 class="date">{{this.date}}</h2>
+                        <h1>{{this.heading}}</h1>
                         <div class="timeline-image">
-                            <img src="./images/annie-spratt-QckxruozjRg-unsplash.jpg" alt="">
+                            <img src="{{this.image}}" alt="">
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste ullam distinctio esse dolore cum iure nisi dolorum, ex id!</p>
+                        <p>{{this.content}}</p>
                     </div>
                 </li>
-                <li class="timeline-item">
-                    <div class="timeline-content">
-                        <h2 class="date">20th May 2010</h2>
-                        <h1>Heading 2</h1>
-                        <div class="timeline-image">
-                            <img src="./images/annie-spratt-QckxruozjRg-unsplash.jpg" alt="">
-                        </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste ullam distinctio esse dolore cum iure nisi dolorum, ex id!</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-content">
-                        <h2 class="date">20th May 2010</h2>
-                        <h1>Heading 3</h1>
-                        <div class="timeline-image">
-                            <img src="./images/annie-spratt-QckxruozjRg-unsplash.jpg" alt="">
-                        </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste ullam distinctio esse dolore cum iure nisi dolorum, ex id!</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-content">
-                        <h2 class="date">20th May 2010</h2>
-                        <h1>Heading 4</h1>
-                        <div class="timeline-image">
-                            <img src="./images/annie-spratt-QckxruozjRg-unsplash.jpg" alt="">
-                        </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste ullam distinctio esse dolore cum iure nisi dolorum, ex id!</p>
-                    </div>
-                </li>
+                {{/each}}
             </ul>
         </div>
     </div>

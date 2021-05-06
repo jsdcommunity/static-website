@@ -1,0 +1,10 @@
+{
+    "events_timeline": [
+        {
+            "date": "20 May 2021",
+            "heading": "Event 1",
+            "content": "Some content",
+            "image": "./images/annie-spratt-QckxruozjRg-unsplash.jpg"
+        }
+    ]
+}
