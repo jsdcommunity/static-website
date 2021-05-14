@@ -22,8 +22,14 @@
   </p>
 </p>
 
+<!-- CONTRIBUTING -->
+## Contributing Setup Guide 👨‍💻️
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+
 <!-- PREREQUISITES -->
-## Prerequisites 🤓️
+### Prerequisites 🤓️
 
 Things you need to run this project locally.
 * [Node](https://nodejs.org/en/)
@@ -34,10 +40,8 @@ Things you need to run this project locally.
   ```sh
     sudo apt install npm@latest -g
 
-<!-- CONTRIBUTING -->
-## Contributing Setup Guide 👨‍💻️
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+<!-- INSTALLATION -->
+### Installation 🖱️
 
 1. Clone this repository (`git clone https://github.com/jsdcommunity/static-website.git`) to your local machine
 2. Open this project directory in your preferred text editor or `cd static-website`
