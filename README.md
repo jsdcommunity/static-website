@@ -6,7 +6,7 @@
   </a> -->
   <h1 align="center"> 🎉️ JSD 🎉️</h1>
 
-  <h2 align="center">JSD Static Website</h2>
+  <h3 align="center">JSD Static Website</h3>
 
   <p align="center">
     An awesome JSD static website!
