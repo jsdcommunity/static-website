@@ -5,7 +5,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
   <h1 align="center"> 🎉️ JSD 🎉️</h1>
-
+  
   <h3 align="center">JSD Static Website</h3>
 
   <p align="center">
@@ -21,6 +21,7 @@
     <a href="https://github.com/jsdcommunity/static-website/issues">Request Feature</a>
   </p>
 </p>
+<hr>
 
 <!-- CONTRIBUTING -->
 ## Contributing Setup Guide 👨‍💻️
