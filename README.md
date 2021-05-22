@@ -29,18 +29,6 @@
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 
-<!-- PREREQUISITES -->
-### Prerequisites 🤓️
-
-Things you need to run this project locally.
-* [Node](https://nodejs.org/en/)
-  ```sh
-    sudo apt install nodejs@latest -g
-
-* Node Package Manager ( [npm](https://www.npmjs.com/) )
-  ```sh
-    sudo apt install npm@latest -g
-
 <!-- INSTALLATION -->
 ### Installation 🖱️
 
