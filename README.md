@@ -33,7 +33,7 @@ Contributions are what make the open source community such an amazing place to b
 ### Installation 🖱️
 
 1. Clone this repository (`git clone https://github.com/jsdcommunity/static-website.git`) to your local machine
-2. Open this project directory in your preferred text editor or `cd static-website`
+2. Open this project directory in your preferred text editor or run `code static-website` to open in visual studio code (if installed)
 3. Run `npm install` to download the dependencies
 4. Run `npm start` to open the development server in your browser
 <!-- 5. Commit your Changes (`git commit -m 'YOUR_COMMIT_MESSAGE_HERE'`)
