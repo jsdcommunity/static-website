@@ -1,4 +1,4 @@
-import '@/styl/style.styl'
+// import '@/scss/style.scss'
 
 const $ = require("jquery");
 import ScrollReveal from "scrollreveal"

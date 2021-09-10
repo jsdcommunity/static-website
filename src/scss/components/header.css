@@ -1,0 +1,203 @@
+.container-header {
+  width: 100%;
+  padding: 0.5rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+.nav-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: var(--poppins);
+}
+
+.nav-item {
+  margin-right: 1.2rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--footerBlack);
+}
+
+.social-link {
+  background-color: #c4c4c438;
+  border-radius: 10rem;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.social-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav-item::before {
+  width: 3.1rem;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.nav-item:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.social-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.social-link-active {
+  background-color: #8d50d3;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.header-active {
+  background-color: white;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-responsive > i {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .circle-big {
+    width: 51rem;
+    height: 51rem;
+    right: -16%;
+    top: -30%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-header {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+  .nav-close {
+    display: block;
+    margin-left: auto;
+    margin-top: 0.5em;
+    margin-right: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: .9rem 1rem;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  .container-header {
+    padding: 0.5rem 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    background-color: rgba(141, 80, 211, 0.9);
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  .nav-links {
+    color: #fff;
+  }
+  .nav-menu {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: var(--poppins);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 45%;
+    font-size: 1.1rem;
+  }
+  .social-media {
+    margin-bottom: auto;
+  }
+  .nav-responsive > i {
+    display: block;
+  }
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  .nav-active {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+/*# sourceMappingURL=header.css.map */

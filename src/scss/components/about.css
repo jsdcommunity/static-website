@@ -1,0 +1,141 @@
+.about-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem;
+}
+
+.about {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 6rem;
+  padding-right: 15rem;
+}
+
+.about-container .image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about p {
+  font-family: var(--poppins);
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: #494c5e;
+  letter-spacing: 1.1px;
+  line-height: 2.1;
+}
+
+.about h2 {
+  font-size: 4rem;
+  color: #494c5e;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about {
+    padding: 0;
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-container img {
+    width: 23rem;
+  }
+  .about p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+    line-height: 1.9;
+  }
+  .about h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .about-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .about-container .image {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    z-index: -1;
+    opacity: .08;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
+  }
+  .about {
+    padding: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 80%;
+  }
+  .about-container img {
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 750px) and (max-width: 400px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+  .about {
+    width: 100%;
+  }
+  .about p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 1.1px;
+    line-height: 1.9;
+  }
+}
+/*# sourceMappingURL=about.css.map */
