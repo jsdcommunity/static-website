@@ -40,6 +40,8 @@
   "dependencies": {
     "bootstrap": "^5.0.0",
     "jquery": "^3.6.0",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0",
     "scrollreveal": "^4.0.9"
   }
 }
