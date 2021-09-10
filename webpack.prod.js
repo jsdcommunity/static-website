@@ -32,8 +32,11 @@ const config = {
   },
   output: {
     filename: "js/[name].[chunkhash].js",
-    path: resolve("dist/"),
-    publicPath: "/dist/",
+    path: resolve("static-website/"),
+    // Using "/static-website/" for github pages, because
+    // github pages will host this as "https://jsdcommunity.github.io/static-website/"
+    // so for pages to find assets they have to look on this child directory
+    publicPath: "/static-website/",
   },
   resolve: {
     alias: {

@@ -1,5 +1,6 @@
 node_modules
 package-lock.json
 dist
+static-website
 */.DS_Store
 .vscode
