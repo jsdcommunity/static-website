@@ -1,5 +1,63 @@
-.footer-container{
-	width: 100%;
-	height: 20rem;
-	background-color: var(--footerBlack);
+footer {
+  background-color: var(--darkViolet);
+  font-family: var(--poppins);
+
+  hr {
+    width: 60%;
+    margin: auto;
+  }
+
+  .u-anime {
+    display: inline-block;
+    position: relative;
+    padding: 3px 0;
+    font-weight: bold;
+  }
+
+  .u-anime::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .u-anime:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .footer-container {
+    padding-top: 3rem;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .small-para {
+      font-size: 1.5rem;
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: whitesmoke;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .main-title {
+    font-size: 1.8rem !important;
+  }
 }
